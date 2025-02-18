@@ -1,0 +1,15 @@
+<ul class="fruits">
+    <li class="head">
+        <span class="badge">ID</span>
+        <span class="name">Name</span>
+        <span class="description">Description</span>
+        <span>Action</span>
+    </li>  
+
+    <li *ngFor="let element of elements">
+        <span class="id">{{element.id}}</span>
+        <span class="name">{{element.name}}</span>
+        <span class="description">{{element.description}}</span>
+        <button type="button" (click)="selectElement(element)">Select</button>
+    </li>   
+</ul>

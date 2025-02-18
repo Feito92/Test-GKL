@@ -1,0 +1,90 @@
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button.primary {
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button.primary:hover {
+  background: #0056b3;
+}
+
+.fruits {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+
+.fruits .head {
+  display: grid;
+  grid-template-columns: 5% 20% 45% auto;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 16px;
+  border-bottom: 2px solid #0056b3;
+}
+
+.fruits li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.fruits span {
+  text-align: left;
+  padding: 5px;
+}
+
+.fruits .id { flex: 0.5; min-width: 50px; text-align: center; }
+.fruits .name { flex: 1; min-width: 150px; }
+.fruits .description { flex: 2; min-width: 250px; }
+.fruits button { flex: 0.5; text-align: center; }
+
+.fruits button {
+  background: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.fruits button:hover {
+  background: #218838;
+}
