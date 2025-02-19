@@ -1,11 +1,11 @@
-form {
+.form {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-input {
+.input {
   padding: 10px;
   width: 250px;
   border: 1px solid #ccc;
@@ -13,7 +13,7 @@ input {
   font-size: 16px;
 }
 
-button.primary {
+.button.primary {
   background: #007bff;
   color: white;
   padding: 10px 15px;
@@ -24,7 +24,7 @@ button.primary {
   transition: 0.3s;
 }
 
-button.primary:hover {
+.button.primary:hover {
   background: #0056b3;
 }
 
@@ -44,7 +44,7 @@ button.primary:hover {
 
 .fruits .head {
   display: grid;
-  grid-template-columns: 5% 20% 45% auto;
+  grid-template-columns: 5% 20% 45% 18%;
   /* display: flex;
   align-items: center;
   justify-content: space-between; */
@@ -83,6 +83,7 @@ button.primary:hover {
   cursor: pointer;
   font-size: 14px;
   transition: 0.3s;
+  margin-left: 10px;
 }
 
 .fruits button:hover {

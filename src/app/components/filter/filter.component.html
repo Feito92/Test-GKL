@@ -1,4 +1,5 @@
 <form>
-    <input type="text" placeholder="Filter by name" #filter [value]="nameSelected"/>
-    <button class="primary" type="button" (click)="saveValue(filter.value)">Search</button>
+    <!-- <input type="text" placeholder="Filter by name" #filter [value]="nameSelected"/> -->
+    <input type="text" [value]="term" (input)="saveValue($event)" placeholder="Filter by name">
+    <!-- <button class="primary" type="button" (click)="saveValue(filter.value)">Search</button> -->
 </form>

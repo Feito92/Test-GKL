@@ -1,0 +1,49 @@
+.details {
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: gainsboro;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  }
+
+  .name{
+    padding-bottom: 8px;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    font-weight: 400;
+    margin-left: 0.5em
+  }
+  .description{
+    padding-bottom: 4px;
+    line-height: 2.4rem;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 100;
+    margin-left: 0.5em
+  }
+  .button{
+    background: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+  }
+  .button:hover {
+    background: #218838;
+  }
+  .buttonContainer{
+    display: flex;
+    justify-content: flex-end;
+  }

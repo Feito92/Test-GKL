@@ -3,7 +3,7 @@
         <span class="badge">ID</span>
         <span class="name">Name</span>
         <span class="description">Description</span>
-        <span>Action</span>
+        <span>Actions</span>
     </li>  
 
     <li *ngFor="let element of elements">
@@ -11,5 +11,6 @@
         <span class="name">{{element.name}}</span>
         <span class="description">{{element.description}}</span>
         <button type="button" (click)="selectElement(element)">Select</button>
+        <button [routerLink]="['/details', element.id]" type="button">Details</button>
     </li>   
 </ul>
