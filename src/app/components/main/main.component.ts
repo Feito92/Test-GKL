@@ -17,14 +17,14 @@ export class MainComponent {
   nameSelected: string = "";
 
   handleElementFiltred(filtred: string) {
-    if(!filtred)
+    if(!filtred || typeof filtred !== 'string')
       {
         this.filteredElementsList = this.elements;
         return;
       }
       this.filteredElementsList = this.elements.filter((elements) => 
         elements?.name.toLocaleLowerCase().includes(filtred.toLocaleLowerCase()),
-      );
+      );  
   }
 
   handleElementSelected(element: ElementInterface) {

@@ -6,11 +6,21 @@
         <span>Actions</span>
     </li>  
 
-    <li *ngFor="let element of elements">
+    <!-- <li *ngFor="let element of elements">
         <span class="id">{{element.id}}</span>
         <span class="name">{{element.name}}</span>
         <span class="description">{{element.description}}</span>
         <button type="button" (click)="selectElement(element)">Select</button>
         <button [routerLink]="['/details', element.id]" type="button">Details</button>
-    </li>   
+    </li> -->
+
+    <cdk-virtual-scroll-viewport itemSize="5" class="viewport">
+        <li *cdkVirtualFor="let element of elements">
+          <span class="id">{{element.id}}</span>
+          <span class="name">{{element.name}}</span>
+          <span class="description">{{element.description}}</span>
+          <button type="button" (click)="selectElement(element)">Select</button>
+          <button [routerLink]="['/details', element.id]" type="button">Details</button>
+        </li>
+      </cdk-virtual-scroll-viewport>
 </ul>
